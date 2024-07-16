@@ -1,0 +1,56 @@
+
+POST http://localhost:3001/register
+Content-type:application/json
+
+{
+"username":"Goku",
+"password":"Goku$76",
+"email":"Goku@gmail.com",
+"role":"user"
+}
+
+####
+
+POST http://localhost:3001/login
+Content-type:application/json
+
+{
+"email":"Goku@gmail.com",
+"password":"Goku$76"
+}
+
+###
+GET http://localhost:3001/product
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNyZWVrYW50aEBnbWFpbC5jb20iLCJpYXQiOjE3MjEwNTAyMzd9.AC7aK_slcAlveVR34MFhITBgO_pFlwvrWr5zL-qzSNM
+
+
+###
+
+POST http://localhost:3001/products
+Content-type:application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNyZWVrYW50aEBnbWFpbC5jb20iLCJpYXQiOjE3MjEwNTAyMzd9.AC7aK_slcAlveVR34MFhITBgO_pFlwvrWr5zL-qzSNM
+
+
+{
+"title":"ALWAYS STRIVE TO BE BETTER",
+"description":"Make your life a Good A head",
+"count":7
+}
+
+###
+
+PUT http://localhost:3001/product/5
+Content-type:application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNyZWVrYW50aEBnbWFpbC5jb20iLCJpYXQiOjE3MjEwNTAyMzd9.AC7aK_slcAlveVR34MFhITBgO_pFlwvrWr5zL-qzSNM
+
+
+{
+"title":"THINK DIFFERENT",
+"description":"Don't to be a fan boy, Be a Boat Head",
+"count":15
+}
+
+###
+DELETE http://localhost:3001/product/15
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNyZWVrYW50aEBnbWFpbC5jb20iLCJpYXQiOjE3MjEwNTAyMzd9.AC7aK_slcAlveVR34MFhITBgO_pFlwvrWr5zL-qzSNM
+
