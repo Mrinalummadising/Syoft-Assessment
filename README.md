@@ -30,8 +30,8 @@
 </p>
 <ul>
    <li> Product Creation can be accessed with admin token only </li>
-   <li> Product Get can be accessed with admin, manager token only  <li>
-   <li> Product Update can be accessed with admin, manager token only  <li>
-   <li> Product Delete can be accessed with admin token only  <li>
+   <li> Product Get can be accessed with admin, manager token only  </li>
+   <li> Product Update can be accessed with admin, manager token only  </li>
+   <li> Product Delete can be accessed with admin token only  </li>
    <li> Staff will not have any CRUD rights </li>
 </ul>
